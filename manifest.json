@@ -1,0 +1,23 @@
+{
+
+  "description": "fix CNKI charset settings in downloading.",
+  "manifest_version": 2,
+  "name": "fCNKIcharset",
+  "version": "1.0",
+  "homepage_url": "https://github.com/yinr/fCNKIcharset",
+
+  "permissions": [
+    "webRequest", "webRequestBlocking", "*://*.cnki.net/*"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "applications": {
+    "gecko": {
+      "strict_min_version": "57.0a1"
+    }
+  }
+
+}
